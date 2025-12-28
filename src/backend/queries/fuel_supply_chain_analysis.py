@@ -1,6 +1,5 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import text
-from src.models.models import Station, FuelTransfer, RefineryTank, StationTank
+from database.models import Station, FuelTransfer, RefineryTank, StationTank
 
 
 def get_fuel_supply_chain_analysis(db: Session):

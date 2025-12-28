@@ -1,12 +1,8 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from sqlalchemy.sql import label
-from sqlalchemy import select
-from sqlalchemy import literal_column
 from sqlalchemy import desc
-from sqlalchemy.orm import aliased
 from sqlalchemy import over
-from src.models.models import Station, StationTank, FuelType, RefuelingSession, SaleTransaction
+from database.models import Station, StationTank, FuelType, RefuelingSession, SaleTransaction
 
 def get_fuel_sales_rank(db: Session):
     subquery = (

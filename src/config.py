@@ -7,7 +7,7 @@ class PostgresSettings(BaseSettings):
     DB_NAME: str
     DB_PASS: str
 
-    model_config = SettingsConfigDict(env_file='.env')
+    model_config = SettingsConfigDict(env_file='../.env')
 
     @property
     def sqlalchemy_url(self):

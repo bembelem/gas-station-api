@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func, text, case
-from src.models.models import (
+from database.models import (
     RawMaterial, DeliveryItem, RawMaterialsDelivery, RawMaterialsSupply,
     Supplier, ProductionBatchRawMaterial, ProductionBatch, BatchStatus
 )

@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import Station
-from src.schemas.stations import StationCreate, StationUpdate
+from database.models import Station
+from backend.schemas.stations import StationCreate, StationUpdate
 from fastapi import HTTPException
 
 def get_all_stations(db: Session):

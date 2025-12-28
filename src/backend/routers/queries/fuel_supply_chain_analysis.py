@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 from typing import List
 
-from database import get_db
-from src.queries.fuel_supply_chain_analysis import (
+from database.database import get_db
+from backend.queries.fuel_supply_chain_analysis import (
     get_fuel_supply_chain_analysis
 )
-from src.schemas.queries.fuel_supply_chain_analysis import FuelSupplyChainAnalysis
+from backend.schemas.queries.fuel_supply_chain_analysis import FuelSupplyChainAnalysis
 
 router = APIRouter(
     prefix="/api/query",

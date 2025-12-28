@@ -13,4 +13,4 @@ class TransportStats(BaseModel):
     current_location: Optional[str]
 
     class Config:
-        orm_mode = True
+        from_attributes = True

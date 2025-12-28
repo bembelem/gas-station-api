@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from src.models.models import SaleTransaction, Customer, ClientTier
+from database.models import SaleTransaction, Customer, ClientTier
 
 def get_client_tier_share_report(db: Session):
     # общая сумма успешных продаж (одна строка с total_purchase)

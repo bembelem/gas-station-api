@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import Refinery
-from src.schemas.refineries import RefineryCreate, RefineryUpdate
+from database.models import Refinery
+from backend.schemas.refineries import RefineryCreate, RefineryUpdate
 from fastapi import HTTPException
 
 def get_all_refineries(db: Session):

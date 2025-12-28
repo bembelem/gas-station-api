@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from database import get_db
-from src.queries.raw_material_efficiency_analysis import get_raw_material_efficiency_analysis
-from src.schemas.queries.raw_material_efficiency_analysis import RawMaterialEfficiencyAnalysis
+from database.database import get_db
+from backend.queries.raw_material_efficiency_analysis import get_raw_material_efficiency_analysis
+from backend.schemas.queries.raw_material_efficiency_analysis import RawMaterialEfficiencyAnalysis
 
 router = APIRouter(
     prefix="/api/query",

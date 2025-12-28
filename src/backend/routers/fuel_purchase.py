@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from database import get_db
-from src.services.fuel_purchase_service import FuelPurchaseService
-from src.schemas.fuel_purchase import FuelPurchaseRequest, FuelPurchaseResponse
+from database.database import get_db
+from backend.services.fuel_purchase_service import FuelPurchaseService
+from backend.schemas.fuel_purchase import FuelPurchaseRequest, FuelPurchaseResponse
 
 router = APIRouter(
     prefix="/api/fuel-purchase",

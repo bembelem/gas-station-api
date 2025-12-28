@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from src.models.models import SupplyOrder, Station, StationTank, ProductionOrder, FuelType
+from database.models import SupplyOrder, Station, StationTank, ProductionOrder, FuelType
 
 def get_fuel_deficit_report(db: Session):
     # объём, который нужно восполнить по заявкам на поставку

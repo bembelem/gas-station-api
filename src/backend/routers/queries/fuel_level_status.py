@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db
-from src.schemas.queries.fuel_level_status import FuelLevelResponse
-from src.queries.fuel_level_status import get_critical_fuel_levels
+from database.database import get_db
+from backend.schemas.queries.fuel_level_status import FuelLevelResponse
+from backend.queries.fuel_level_status import get_critical_fuel_levels
 
 router = APIRouter(prefix="/api/query", tags=["Queries"])
 

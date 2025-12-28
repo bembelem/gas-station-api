@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from src.crud import fuel_types as crud
-from src.schemas.fuel_types import FuelTypeResponse, FuelTypeCreate, FuelTypeUpdate
-from database import get_db
+from backend.crud import fuel_types as crud
+from backend.schemas.fuel_types import FuelTypeResponse, FuelTypeCreate, FuelTypeUpdate
+from database.database import get_db
 
 router = APIRouter(
     prefix="/api/fuel-types",

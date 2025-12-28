@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from src.crud import station_tanks as crud
-from src.schemas.station_tanks import (
+from backend.crud import station_tanks as crud
+from backend.schemas.station_tanks import (
     StationTankResponse, StationTankCreate, StationTankUpdate, StationTankVolumeUpdate
 )
-from database import get_db
+from database.database import get_db
 
 router = APIRouter(
     prefix="/api/station-tanks",

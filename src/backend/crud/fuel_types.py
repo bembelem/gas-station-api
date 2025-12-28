@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import FuelType
-from src.schemas.fuel_types import FuelTypeCreate, FuelTypeUpdate
+from database.models import FuelType
+from backend.schemas.fuel_types import FuelTypeCreate, FuelTypeUpdate
 from fastapi import HTTPException
 
 def get_all_fuel_types(db: Session):

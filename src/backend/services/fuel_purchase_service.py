@@ -4,7 +4,7 @@ from datetime import datetime, date
 from typing import Optional
 from fastapi import HTTPException
 
-from src.models.models import (
+from database.models import (
     StationTank, SaleTransaction, RefuelingSession, Customer,
     SaleTransactionStatus, RefuelingSessionStatus
 )

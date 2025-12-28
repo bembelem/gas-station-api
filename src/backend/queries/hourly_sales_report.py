@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import func, extract, cast, Integer
-from src.models.models import (
+from sqlalchemy import func
+from database.models import (
     SaleTransaction, RefuelingSession, FuelType,
     FuelPump, FuelDispenser, Station
 )

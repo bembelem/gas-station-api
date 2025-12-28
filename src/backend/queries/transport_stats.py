@@ -1,8 +1,7 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import func, case, literal, cast
-from sqlalchemy.sql import label
+from sqlalchemy import func, case
 from datetime import datetime, timedelta
-from src.models.models import Transport, TransportStatus, TransferTransport, FuelTransfer, TransferStatus
+from database.models import Transport, TransportStatus, TransferTransport, FuelTransfer, TransferStatus
 
 def get_transport_stats(db: Session):
     # для ID незавершённых статусов

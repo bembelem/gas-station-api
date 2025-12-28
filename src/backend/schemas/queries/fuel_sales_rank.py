@@ -7,4 +7,4 @@ class FuelSalesRank(BaseModel):
     fuel_sales_rank: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True

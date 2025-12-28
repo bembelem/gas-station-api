@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db
-from src.queries.client_tier_share import get_client_tier_share_report
-from src.schemas.queries.client_tier_share import ClientTierShareReport
+from database.database import get_db
+from backend.queries.client_tier_share import get_client_tier_share_report
+from backend.schemas.queries.client_tier_share import ClientTierShareReport
 
 router = APIRouter(
     prefix="/api/query",

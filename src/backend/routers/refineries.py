@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from src.crud import refineries as crud
-from src.schemas.refineries import RefineryResponse, RefineryCreate, RefineryUpdate
-from database import get_db
+from backend.crud import refineries as crud
+from backend.schemas.refineries import RefineryResponse, RefineryCreate, RefineryUpdate
+from database.database import get_db
 
 router = APIRouter(
     prefix="/api/refineries",

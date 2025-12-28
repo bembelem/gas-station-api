@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import Customer
-from src.schemas.customers import CustomerCreate, CustomerUpdate
+from database.models import Customer
+from backend.schemas.customers import CustomerCreate, CustomerUpdate
 from fastapi import HTTPException
 
 def get_all_customers(db: Session):

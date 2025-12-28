@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import StationTank
-from src.schemas.station_tanks import StationTankCreate, StationTankUpdate, StationTankVolumeUpdate
+from database.models import StationTank
+from backend.schemas.station_tanks import StationTankCreate, StationTankUpdate, StationTankVolumeUpdate
 from fastapi import HTTPException
 
 def get_all_station_tanks(db: Session):

@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db
-from src.queries.fuel_sales_rank import get_fuel_sales_rank
-from src.schemas.queries.fuel_sales_rank import FuelSalesRank
+from database.database import get_db
+from backend.queries.fuel_sales_rank import get_fuel_sales_rank
+from backend.schemas.queries.fuel_sales_rank import FuelSalesRank
 
 router = APIRouter(
     prefix="/api/query",

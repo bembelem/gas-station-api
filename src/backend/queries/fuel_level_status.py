@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import case
-from src.models.models import StationTank, Station, FuelType
+from database.models import StationTank, Station, FuelType
 
 def get_critical_fuel_levels(db: Session):
     percentage = (StationTank.current_volume / StationTank.capacity * 100).label("fill_percentage")

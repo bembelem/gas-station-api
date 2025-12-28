@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from src.models.models import RefineryTank
-from src.schemas.refinery_tanks import RefineryTankCreate, RefineryTankUpdate, VolumeUpdate
+from database.models import RefineryTank
+from backend.schemas.refinery_tanks import RefineryTankCreate, RefineryTankUpdate, VolumeUpdate
 from fastapi import HTTPException
 
 def get_all_tanks(db: Session):

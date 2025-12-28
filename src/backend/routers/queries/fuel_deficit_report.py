@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db  # или src.database.get_db, если нужен полный путь
-from src.queries.fuel_deficit_report import get_fuel_deficit_report
-from src.schemas.queries.fuel_deficit_report import FuelDeficitResponse
+from database.database import get_db
+from backend.queries.fuel_deficit_report import get_fuel_deficit_report
+from backend.schemas.queries.fuel_deficit_report import FuelDeficitResponse
 
 router = APIRouter(
     prefix="/api/query",
